@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land of Boxes</title>
+</head>
+<body>
+    <h1>Land of Boxes</h1>
+    <h3>Order Form</h3>
+
+    <div class="Personal details">
+        <h5>Personal Details</h5>
+        <fieldset>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required placeholder="Bobby"> <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required placeholder="username@example.com"> <br>
+            <label for="address">Address: </label>
+            <input type="text" id="address" required placeholder="Full address"> <br>
+            <label for="pincode">Pincode: </label>
+            <input type="text" id="pincode" required placeholder="123456">
+        </fieldset>
+    </div>
+
+    <div class="productDetails">
+        <h5>Product Details</h5>
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Part Number</th>
+                <th>Quantity</th>
+                <th>Unit Price</th>
+                <th>Sub total</th>
+            </tr>
+
+            <tr>
+                <td>Econo Box</td>
+                <td>Lb100</td>
+                <td><input type="number"></td>
+                <td>5</td>
+                <td><input type="number"></td>
+            </tr>
+
+            <tr>
+                <td>Standard Box</td>
+                <td>Lb200</td>
+                <td><input type="number"></td>
+                <td>15</td>
+                <td><input type="number"></td>
+            </tr>
+
+            <tr>
+                <td>Premium Box</td>
+                <td>Lb300</td>
+                <td><input type="number"></td>
+                <td>40</td>
+                <td><input type="number"></td>
+            </tr>
+
+            <tr>
+                <td>Delux Box</td>
+                <td>Lb400</td>
+                <td><input type="number"></td>
+                <td>60</td>
+                <td><input type="number"></td>
+            </tr>
+
+            <tr>
+                <td>Super Delux Box</td>
+                <td>Lb500</td>
+                <td><input type="number"></td>
+                <td>70</td>
+                <td><input type="number"></td>
+            </tr>
+            
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Total</td>
+                <td><input type="number"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="PaymenrDetails">
+        <h5>payment Details</h5>
+        <form action="" aria-required="true">
+            <fieldset>
+                <legend>Select your prefered Payment method</legend>
+                <label for="UPI">
+                    <input type="radio" name="Payment"> UPI
+                </label> <br>
+                <label for="Creditcard">
+                    <input type="radio" name="Payment"> Credit Crad
+                </label> <br>
+                <label for="UPI">
+                    <input type="radio" name="Payment"> Debit Card
+                </label> <br>
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="deliveryDetails">
+        <h5>Delivery details</h5>
+        <label for="deliveryAddress">
+            <input type="text" required placeholder="Full delivery address ">
+        </label>
+    </div>
+
+    <div class="actionButton">
+        <button>Order Now</button>
+        <button>Clear Form</button>
+    </div>
+    
+</body>
+</html>
