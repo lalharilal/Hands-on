@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARI LAL S | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+    <div id="home"></div>
+    <!-- Navigation Bar -->
+    <nav>
+        
+        <div class="profile_name">HARI LAL S</div>
+
+        
+        <div class="topmenu">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Me -->
+    <section id="home">
+            <div class="about-content">
+
+            
+            <img
+                src="./profile.png"
+                alt="HARI LAL S Profile"
+                class="profile_image"
+            >
+
+            <h1>HARI LAL S</h1>
+
+            <h2>Web Developer &amp; Technology Enthusiast</h2>
+
+            <p>
+                Hello! I am HARI LAL S, a passionate developer who enjoys creating
+                modern, responsive, and user-friendly digital experiences. I am
+                interested in web development, problem solving, and learning new
+                technologies. I enjoy transforming ideas into practical applications
+                and continuously improving my technical and creative skills.
+            </p>
+        </div>
+    </section>
+
+    <!-- Project Details -->
+    <section id="projects">
+        <h2 class="section-title">Project Details</h2>
+
+        <div class="project-container">
+
+            <div class="project-card">
+                <h3>Stock Price Prediction Using LSTM</h3>
+                <p>
+                    A machine learning project that uses Long Short-Term Memory (LSTM)
+                    neural networks to analyze historical stock market data and predict
+                    future stock price trends. The model is trained on time-series data
+                    such as opening, closing, high, low, and trading volume values to
+                    identify patterns and generate price predictions.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>FastKart - E-Commerce Website</h3>
+                <p>
+                    A modern e-commerce platform built with React.js and Node.js,
+                    offering a seamless shopping experience with features like product
+                    browsing, cart management, and secure checkout.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Micro Wallet - Digital Wallet Application</h3>
+                <p>
+                    A secure digital wallet application designed to help users manage
+                    their money conveniently. The platform allows users to track balances,
+                    record transactions, manage expenses, and perform simple digital
+                    payment operations through an intuitive and user-friendly interface.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">
+                <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                    alt="React.js logo"
+                    class="skill-logo"
+                >
+                <h3>React.js</h3>
+                <p>Building interactive and reusable user interfaces.</p>
+            </div>
+
+            <div class="skill">
+                <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                    alt="Python logo"
+                    class="skill-logo"
+                >
+                <h3>Python</h3>
+                <p>Developing applications, automation scripts, and solutions.</p>
+            </div>
+
+            <div class="skill">
+                <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                    alt="SQL logo"
+                    class="skill-logo"
+                >
+                <h3>SQL</h3>
+                <p>Managing, querying, and organizing structured data.</p>
+            </div>
+
+            <div class="skill">
+                <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="JavaScript logo"
+                    class="skill-logo"
+                >
+                <h3>JavaScript</h3>
+                <p>Creating dynamic, interactive, and responsive web experiences.</p>
+            </div>
+
+            <div class="skill">
+                <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                    alt="Git logo"
+                    class="skill-logo"
+                >
+                <h3>Git &amp; GitHub</h3>
+                <p>Managing source code, version control, and collaborative development.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+        <h2 class="section-title">Recommendations</h2>
+
+        <div class="recommendation-container">
+
+            <div class="recommendation">
+                <p>
+                    "HARI LAL consistently approaches technical challenges with
+                    curiosity and determination. He learns quickly and applies
+                    new concepts effectively."
+                </p>
+                <h4>— Arun, Project Mentor</h4>
+            </div>
+
+            <div class="recommendation">
+                <p>
+                    "Working with HARI LAL was a great experience. He communicates
+                    ideas clearly, contributes useful solutions, and works well
+                    as part of a team."
+                </p>
+                <h4>— Priya, Team Member</h4>
+            </div>
+
+            <div class="recommendation">
+                <p>
+                    "HARI LAL has a strong interest in technology and consistently
+                    demonstrates a willingness to improve. His problem-solving
+                    approach is one of his key strengths."
+                </p>
+                <h4>— Karthik, Technical Lead</h4>
+            </div>
+
+        </div>
+
+        <form onsubmit="event.preventDefault(); addRecommendation();">
+            <textarea
+                id="newRecommendation"
+                placeholder="Write a recommendation..."
+                required
+            ></textarea>
+
+            <button type="submit">Submit Recommendation</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 HARI LAL S. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Home Button -->
+    <a
+        href="#home"
+        class="iconbutton home-icon"
+        title="Go to home"
+        aria-label="Go to home"
+    >
+        🏠
+    </a>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

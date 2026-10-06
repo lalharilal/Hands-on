@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #fff;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: #172554;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Required profile_name */
+.profile_name {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Required topmenu */
+.topmenu ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.topmenu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.topmenu ul li a:hover {
+    color: #60a5fa;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+/* Home icon */
+.home-icon {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 50px;
+    height: 50px;
+    background: #2563eb;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    z-index: 999;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.home-icon:hover {
+    background: #1d4ed8;
+    transform: scale(1.1);
+}
+
+/* Sections */
+section {
+    padding: 100px 8%;
+    min-height: 500px;
+}
+
+/* About */
+#about {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #eff6ff, #dbeafe);
+}
+
+.about-content {
+    max-width: 900px;
+}
+
+/* Required profile image */
+.profile_image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 25px;
+    border: 5px solid #ffffff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.about-content h1 {
+    font-size: 52px;
+    color: #172554;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about-content h2 {
+    color: #2563eb;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #475569;
+    max-width: 800px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 34px;
+    color: #172554;
+    margin-bottom: 45px;
+}
+
+/* Projects */
+#projects {
+    background: #f8fafc;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.project-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-card h3 {
+    color: #2563eb;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.project-card p {
+    color: #64748b;
+}
+
+/* Skills */
+#skills {
+    background: white;
+}
+
+.skills-container {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Required skill class */
+.skill {
+    text-align: center;
+    padding: 30px 20px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background: #fff;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Skill image logos */
+.skill-logo {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.skill h3 {
+    color: #172554;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.skill p {
+    color: #64748b;
+}
+
+/* Recommendations */
+#recommendations {
+    background: #eff6ff;
+}
+
+.recommendation-container {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.recommendation {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.recommendation p {
+    font-style: italic;
+    color: #475569;
+    margin-bottom: 20px;
+}
+
+.recommendation h4 {
+    color: #2563eb;
+    text-align: right;
+}
+
+/* Recommendation Form */
+#recommendations form {
+    max-width: 700px;
+    margin: 40px auto 0;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#newRecommendation {
+    width: 100%;
+    min-height: 130px;
+    padding: 15px;
+    border: 2px solid #dbeafe;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #334155;
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#newRecommendation::placeholder {
+    color: #94a3b8;
+}
+
+#newRecommendation:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+#recommendations form button {
+    align-self: flex-end;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#recommendations form button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+#recommendations form button:active {
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+    nav {
+        padding: 0 4%;
+    }
+
+    .topmenu ul {
+        gap: 12px;
+    }
+
+    .topmenu ul li a {
+        font-size: 13px;
+    }
+
+    .profile_name {
+        font-size: 17px;
+    }
+
+    .about-content h1 {
+        font-size: 38px;
+    }
+
+    .project-container,
+    .skills-container,
+    .recommendation-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        height: auto;
+        min-height: 70px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+        padding: 12px 4%;
+    }
+
+    .topmenu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .topmenu ul li a {
+        font-size: 12px;
+    }
+
+    #recommendations form {
+        margin: 30px 10px 0;
+        padding: 20px;
+    }
+
+    #recommendations form button {
+        width: 100%;
+    }
+}
